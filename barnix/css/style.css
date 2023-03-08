@@ -1148,7 +1148,7 @@
 
 .testimonial-section .content-boxed .inner-box{
 	position:relative;
-	border-radius:50%;
+	border-radius:8%;
 	width:830px;
 	height:830px;
 	margin:0 auto;
@@ -1161,10 +1161,12 @@
 
 .testimonial-section .content-boxed .content{
 	position:relative;
+	
 }
 
 .testimonial-section .owl-dots{
 	display:none;
+	
 }
 
 .testimonial-section .owl-nav{

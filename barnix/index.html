@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Barnix Multipurpose Business HTML-5 Template | Homepage 01</title>
+<title>LinkB - Linking Brands & Business</title>
 <!-- Stylesheets -->
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
@@ -25,18 +25,222 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
 </head>
+<style>
+	@media only screen and (min-width: 1200px) and (max-width: 1399px){
+.tp-cta-area {
+    padding-left: 50px;
+    padding-right: 50px;
+}}
+.pr-200 {
+    padding-right: 200px;
+}
+.pl-110 {
+    padding-left: 110px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pb-105 {
+    padding-bottom: 105px;
+}
+.pt-95 {
+    padding-top: 95px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.align-items-center {
+    align-items: center!important;
+}
+
+@media (min-width: 992px){
+.justify-content-lg-end {
+    justify-content: flex-end!important;
+}}
+.d-flex {
+    display: flex!important;
+}
+@media (min-width: 992px){
+.col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}}
+.tp-section-title-large {
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 200;
+    font-size: 53px;
+    line-height: 1.2;
+}
+.tp-section-title {
+	font-family: 'DM Sans', sans-serif;
+    font-size: 43px;
+}
+a, button {
+    color: inherit;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.tp-theme-btn {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #ffffff;
+    text-align: center;
+    border-radius: 50%;
+    justify-content: center;
+    z-index: 2;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    background-color: black;
+}
+
+.tp-theme-btn {
+    width: 250px;
+    height: 250px;
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 50%;
+    justify-content: center;
+    z-index: 2;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+.white-bg {
+    background: #000000;
+}
+.align-items-center {
+    align-items: center!important;
+}
+.d-flex {
+    display: flex!important;
+}
+.tp-theme-btn p {
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: #ADADAD;
+}
+.tp-theme-btn b {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    padding: 15px 0px;
+    display: block;
+}
+@media (max-width: 767px){
+.tp-section-title-large {
+    font-size: 25px;
+}}
+.tp-section-title-large {
+    font-size: 53px;
+    line-height: 1.2;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px){
+.tp-section-title {
+    font-size: 26px;
+    padding-right: 0;
+    margin-bottom: 15px;
+}}
+.tp-section-title {
+    font-size: 45px;
+}
+
+.tp-subtitle-before {
+    font-family: var(--tp-ff-body);
+    font-weight: 400;
+    font-size: 20px;
+    position: relative;
+    text-transform: none;
+    letter-spacing: 0;
+    line-height: 1.5;
+}
+.tp-section-subtitle {
+    font-family: var(--tp-ff-heading);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.mb-25 {
+    margin-bottom: 25px;
+}
+.tp-subtitle-before::before {
+    content: "";
+    transform: translateY(-5px);
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    display: inline-block;
+    margin-right: 15px;
+}
+.main-header {
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    background-color: #000000;
+	color: white;
+}
+.main-header .sticky-header {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    padding: 0px 0px;
+    z-index: 0;
+    transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    background-color: rgb(0 0 0);
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+	
+}
+/* .testimonial-section .content-boxed .inner-box {
+    position: relative;
+    border-radius: 5%;
+    width: 830px;
+    height: 830px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f0131eab;
+} */
+
+</style>
 
 <body>
-<div class="cursor"></div>
+<!-- <div class="cursor"></div> -->
 <div class="page-wrapper">
  	
     <!-- Preloader -->
-    <div class="loader-wrap">
+    <!-- <div class="loader-wrap">
         <div class="preloader"><div class="preloader-close">Preloader Close</div></div>
         <div class="layer layer-one"><span class="overlay"></span></div>
         <div class="layer layer-two"><span class="overlay"></span></div>        
         <div class="layer layer-three"><span class="overlay"></span></div>        
-    </div>
+    </div> -->
  	
  	<!-- Main Header -->
     <header class="main-header">
@@ -48,7 +252,10 @@
 				<div class="inner-container d-flex justify-content-between align-items-center">
 					
 					<div class="logo-box">
-						<div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
+						<div class="logo"><a href="index.html">
+							<!-- <img src="images/logo.png" alt="" title=""> -->
+							<h3 style="color: white;">LinkB</h3>
+						</a></div>
 					</div>
 					<div class="nav-outer clearfix">
 						
@@ -66,60 +273,23 @@
 							
 							<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 								<ul class="navigation clearfix">
-									<li class="dropdown"><a href="#">Home</a>
-										<ul>
-											<li><a href="index.html">Homepage One</a></li>
-											<li><a href="index-2.html">Homepage Two</a></li>
-											<li><a href="index-3.html">Homepage Three</a></li>
-											<li><a href="index-4.html">Homepage Four</a></li>
-											<li><a href="index-5.html">Homepage Five</a></li>
-											<li><a href="index-6.html">Homepage Six</a></li>
-											<li class="dropdown"><a href="#">Header Styles</a>
-												<ul>
-													<li><a href="index.html">Header Style One</a></li>
-													<li><a href="index-2.html">Header Style Two</a></li>
-													<li><a href="index-3.html">Header Style Three</a></li>
-													<li><a href="index-4.html">Header Style Four</a></li>
-													<li><a href="index-5.html">Header Style Five</a></li>
-													<li><a href="index-6.html">Header Style Six</a></li>
-												</ul>
-											</li>
-										</ul>
+									<li class="dropdown"><a href="#" style="color: white;">Home</a>
+									
 									</li>
-									<li class="dropdown"><a href="#">About</a>
-										<ul>
-											<li><a href="about.html">About Us</a></li>
-											<li><a href="faq.html">Faq</a></li>
-											<li><a href="price.html">Pricing</a></li>
-											<li><a href="team.html">Team</a></li>
-										</ul>
+									<li class="dropdown"><a href="#"  style="color: white;">About Us</a>
+								
 									</li>
-									<li class="dropdown"><a href="#">Services</a>
-										<ul>
-											<li><a href="services.html">Services</a></li>
-											<li><a href="service-detail.html">Service Detail</a></li>
-										</ul>
+									<li class="dropdown"><a href="#"  style="color: white;">Services</a>
+										
 									</li>
-									<li class="dropdown"><a href="#">Projects</a>
-										<ul>
+									<li class="dropdown"><a href="#"  style="color: white;">Goals</a>
+										<!-- <ul>
 											<li><a href="portfolio.html">portfolio</a></li>
 											<li><a href="portfolio-detail.html">portfolio Detail</a></li>
-										</ul>
+										</ul> -->
 									</li>
-									<li class="dropdown"><a href="#">Shop</a>
-										<ul>
-											<li><a href="shop.html">Our Products</a></li>
-											<li><a href="shop-single.html">Product Single</a></li>
-										</ul>
-									</li>
-									<li class="dropdown"><a href="#">Blog</a>
-										<ul>
-											<li><a href="blog.html">Our Blog</a></li>
-											<li><a href="news-detail.html">Blog Single</a></li>
-											<li><a href="error-page.html">Not Found</a></li>
-										</ul>
-									</li>
-									<li><a href="contact.html">Contact us</a></li>
+									
+									<li><a href="contact.html"  style="color: white;">Contact us</a></li>
 								</ul>
 							</div>
 							
@@ -131,12 +301,13 @@
 					<div class="outer-box clearfix">
 						
 						<!-- Search Box -->
-						<div class="search-box-outer">
+						<!-- <div class="search-box-outer">
 							<div class="search-box-btn"><span class="flaticon-search-1"></span></div>
-						</div>
+						</div> -->
 						
 						<!-- Nav Btn -->
-						<div class="nav-btn navSidebar-button"><span class="icon"><img src="images/icons/bars.png" alt="" /></span></div>
+						<!-- <div class="nav-btn navSidebar-button"><span class="icon">
+							<img src="images/icons/bars.png" alt="" /></span></div> -->
 					</div>
 					<!-- End Outer Box -->
 					
@@ -152,7 +323,10 @@
 				<div class="inner-container d-flex justify-content-between align-items-center">
 					<!-- Logo -->
 					<div class="logo">
-						<a href="index.html" title=""><img src="images/logo-small.png" alt="" title=""></a>
+						<a href="index.html" title="">
+							<!-- <img src="images/logo-small.png" alt="" title=""> -->
+							<h3 style="color: white;">LinkB</h3>
+						</a>
 					</div>
 					
 					<div>
@@ -248,108 +422,71 @@
 	<!-- END sidebar widget item -->
 	
 	<!-- Main Section -->
-    <section class="main-slider">
-		<div class="main-slider-carousel owl-carousel owl-theme">
-            
-			<!-- Slide One -->
-            <div class="slide">
-				<div class="image-layer" style="background-image: url(images/main-slider/image-1.jpg)"></div>
-				<div class="auto-container">
-					
-					<!-- Content Boxed -->
-					<div class="content-boxed">
-						<div class="inner-box" style="background-image: url(images/main-slider/pattern-1.png)">
-							<div class="content">
-								<h1>Financial <br> Planning <br> Advisor..</h1>
-								<div class="text">With unique business ideas, solution and the <br> passionate people behind.</div>
-								<div class="btns-box">
-									<a href="contact.html" class="theme-btn btn-style-one clearfix">
-										<span class="btn-wrap">
-											<span class="text-one">Get In Touch</span>
-											<span class="text-two">Get In Touch</span>
-										</span>
-									</a>
-								</div>
-							</div>
+    <div class="tp-cta-area pl-110 pr-200" style="background-color: black; color: white;">
+		<div class="container-fluid">
+			<div class="tp-cta-wrapper pt-95 pb-105">
+				<div class="row align-items-center">
+					<div class="col-lg-8">
+						<div class="tp-section-wrapper">
+							<span class="tp-section-subtitle tp-subtitle-before mb-25">Linking Brands &amp; Business</span>
+							<h2 class="tp-section-title tp-section-title-large" style="color: white;">Make your <font color="#F0131D">business</font> grow with us. We have a ton of fun in the process. </h2>
 						</div>
 					</div>
-					
-				</div>
-			</div>
-			<!-- End Slide One -->
-			
-			<!-- Slide One -->
-            <div class="slide">
-				<div class="image-layer" style="background-image: url(images/main-slider/image-1.jpg)"></div>
-				<div class="auto-container">
-					
-					<!-- Content Boxed -->
-					<div class="content-boxed">
-						<div class="inner-box" style="background-image: url(images/main-slider/pattern-1.png)">
-							<div class="content">
-								<h1>Financial <br> Planning <br> Advisor..</h1>
-								<div class="text">With unique business ideas, solution and the <br> passionate people behind.</div>
-								<div class="btns-box">
-									<a href="contact.html" class="theme-btn btn-style-one clearfix">
-										<span class="btn-wrap">
-											<span class="text-one">Get In Touch</span>
-											<span class="text-two">Get In Touch</span>
-										</span>
-									</a>
-								</div>
+					<div class="col-lg-4 d-flex justify-content-lg-end">
+						<a href="contact.html">
+							<div class="tp-theme-btn d-flex align-items-center white-bg">
+							   <div class="tp-btn-inner">
+								  <p class="mb-0">Let’t Talk</p>
+								  <b>Get in Touch</b>
+								  <span class="d-inline-block">
+									 <svg width="46" height="8" viewBox="0 0 46 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+										   <path d="M45.3536 4.35355C45.5488 4.15829 45.5488 3.84171 45.3536 3.64645L42.1716 0.464466C41.9763 0.269204 41.6597 0.269204 41.4645 0.464466C41.2692 0.659728 41.2692 0.976311 41.4645 1.17157L44.2929 4L41.4645 6.82843C41.2692 7.02369 41.2692 7.34027 41.4645 7.53553C41.6597 7.7308 41.9763 7.7308 42.1716 7.53553L45.3536 4.35355ZM0 4.5H45V3.5H0V4.5Z" fill="currentColor"></path>
+										</svg>
+										
+								  </span>
+							   </div>
 							</div>
-						</div>
+						 </a>
 					</div>
-					
 				</div>
 			</div>
-			<!-- End Slide One -->
-			
-			<!-- Slide One -->
-            <div class="slide">
-				<div class="image-layer" style="background-image: url(images/main-slider/image-1.jpg)"></div>
-				<div class="auto-container">
-					
-					<!-- Content Boxed -->
-					<div class="content-boxed">
-						<div class="inner-box" style="background-image: url(images/main-slider/pattern-1.png)">
-							<div class="content">
-								<h1>Financial <br> Planning <br> Advisor..</h1>
-								<div class="text">With unique business ideas, solution and the <br> passionate people behind.</div>
-								<div class="btns-box">
-									<a href="contact.html" class="theme-btn btn-style-one clearfix">
-										<span class="btn-wrap">
-											<span class="text-one">Get In Touch</span>
-											<span class="text-two">Get In Touch</span>
-										</span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-			<!-- End Slide One -->
-			
 		</div>
-		<!-- Social Box -->
-		<ul class="social-box">
-			<li><a href="#" class="fa fa-facebook"> <span>Facebook</span></a></li>
-			<li><a href="#" class="fa fa-youtube-play"> <span>Youtube</span></a></li>
-			<li><a href="#" class="fa fa-twitter"> <span>Twitter</span></a></li>
-			<li><a href="#" class="fa fa-linkedin"> <span>Linkedin</span></a></li>
-		</ul>
-		<!-- End Social Box -->
-		
-		<!-- Scroll Box -->
-		<div class="scroll-box scroll-to-target" data-target=".info-section">
-			<span class="icon flaticon-mouse"></span>Scrool Down
-		</div>
-		<!-- End Scroll Box -->
-		
-	</section>
+	</div>
 	<!-- End Main Section -->
+
+		<!-- Main Section -->
+		<section class="main-slider-two">
+			<div class="main-slider-carousel owl-carousel owl-theme">
+				
+				
+	
+				<!-- End Slide Two -->
+				
+				<!-- Slide Three -->
+				<div class="slide">
+					<div class="pattern-layer" style="background-image: url(images/main-slider/pattern-2.png)"></div>
+					<div class="auto-container">
+						
+						<!-- Content Boxed -->
+						<div class="content-boxed">
+							<h1>Developing<span> Relationships.</span> Delivering<span> Results.</span></h1>
+							<div class="btns-box">
+								<a href="contact.html" class="theme-btn btn-style-five clearfix">
+									<span class="btn-wrap">
+										<span class="text-one">Get Started</span>
+										<span class="text-two">Get Started</span>
+									</span>
+								</a>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<!-- End Slide Three -->
+				
+			</div>
+		</section>
+		<!-- End Main Section -->
 	
 	<!-- Info Section -->
 	<section class="info-section">
@@ -361,8 +498,8 @@
 						<div class="info-box">
 							<div class="box-inner">
 								<span class="icon flaticon-telephone"></span>
-								<i>Call Us <br> Directly</i>
-								<a href="tel:+1-202-555-0160">+1-202-555-0160</a>
+								<i>Call Us</i>
+								<a href="tel:+971 50 347 8905">+971 50 347 8905</a>
 							</div>
 						</div>
 					</div>
@@ -371,8 +508,8 @@
 						<div class="info-box">
 							<div class="box-inner">
 								<span class="icon flaticon-email"></span>
-								<i>Mail us <br> Quickly</i>
-								<a href="mailto:yourinfo@gmail.com">yourinfo@gmail.com</a>
+								<i>Mail us</i>
+								<a href="info@linkb.ae">info@linkb.ae</a>
 							</div>
 						</div>
 					</div>
@@ -401,8 +538,8 @@
 				<div class="service-block col-lg-3 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<div class="icon flaticon-target-1"></div>
-						<h5><a href="service-detail.html">Independent Advice</a></h5>
-						<div class="text">Capitalize on low hanging fruit to identify a ballpart value Override the Digital devide</div>
+						<h5><a href="service-detail.html">Market Entry</a></h5>
+						<div class="text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</div>
 					</div>
 				</div>
 				
@@ -410,8 +547,8 @@
 				<div class="service-block col-lg-3 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInLeft" data-wow-delay="150ms" data-wow-duration="1500ms">
 						<div class="icon flaticon-customer-support"></div>
-						<h5><a href="service-detail.html">Financial Advice</a></h5>
-						<div class="text">Capitalize on low hanging fruit to identify a ballpart value Override the Digital devide</div>
+						<h5><a href="service-detail.html">Research</a></h5>
+						<div class="text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</div>
 					</div>
 				</div>
 				
@@ -419,19 +556,12 @@
 				<div class="service-block col-lg-3 col-md-6 col-sm-12">
 					<div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
 						<div class="icon flaticon-stats"></div>
-						<h5><a href="service-detail.html">Market Volatility</a></h5>
-						<div class="text">Capitalize on low hanging fruit to identify a ballpart value Override the Digital devide</div>
+						<h5><a href="service-detail.html">Management</a></h5>
+						<div class="text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</div>
 					</div>
 				</div>
 				
-				<!-- Service Block -->
-				<div class="service-block col-lg-3 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInLeft" data-wow-delay="450ms" data-wow-duration="1500ms">
-						<div class="icon flaticon-money-bag"></div>
-						<h5><a href="service-detail.html">Mutual Fund</a></h5>
-						<div class="text">Capitalize on low hanging fruit to identify a ballpart value Override the Digital devide</div>
-					</div>
-				</div>
+			
 				
 			</div>
 		</div>
@@ -439,16 +569,17 @@
 	<!-- End Services Section -->
 	
 	<!-- Strategy Section -->
-	<section class="strategy-section">
+	<section class="strategy-section" style="background-color: black;">
 		<div class="auto-container">
 			<div class="row clearfix">
 			
 				<!-- Title Box -->
 				<div class="title-column col-lg-6 col-md-12 col-sm-12">
 					<div class="inner-column">
-						<h2>Strategy driven leadership and Development.</h2>
-						<p>Barnix Finance team is a diverse network of sonsultants and  industry porfessionlas with a global mindset and a collaboratiove cultture.</p>
-						<p>Barnix Finance team is a diverse network of sonsultants and  industry porfessionlas with.</p>
+						<h2>Link<font color="#F0131D">B</font> – Linking Brands and Business</h2>
+
+						<p>For clients that want to build a market presence in Middle east , Africa & Asia . LinkB offers market entry advice including but not limited to; research - sizing the market, gauging the competition, determining pricing, designing an appropriate route to market and even selecting distributors.</p>
+						<p>For clients that already have a business, we can help enhance the RTM including assessing the quality of the distribution partners. We also manage brands on behalf of the clients. By doing so, we help bring the client’s products close to the target market</p>
 						<a class="more-service" href="services.html">See Our Solution <span class="flaticon-next-2"></span></a>
 					</div>
 				</div>
@@ -463,7 +594,7 @@
 								<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 									<div class="icon flaticon-bar-chart"></div>
 									<h5><a href="service-detail.html">Organizational Development</a></h5>
-									<div class="text">Barnix Finance team is a diverse network of sonsultants and  industry porfessionlas with</div>
+									<div class="text">Distributors are overwhelmed by calls from brand owners looking for new partners.</div>
 								</div>
 							</div>
 							
@@ -472,7 +603,7 @@
 								<div class="inner-box wow fadeInLeft" data-wow-delay="150ms" data-wow-duration="1500ms">
 									<div class="icon flaticon-graduated"></div>
 									<h5><a href="service-detail.html">Supercharged Coaching</a></h5>
-									<div class="text">Barnix Finance team is a diverse network of sonsultants and  industry porfessionlas with</div>
+									<div class="text">Distributors assess each opportunity carefully, as any new brand must add incremental sales and profits and not distract from priorities from existing brands handled.</div>
 								</div>
 							</div>
 							
@@ -481,7 +612,7 @@
 								<div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
 									<div class="icon flaticon-hand-shake"></div>
 									<h5><a href="service-detail.html">Company and Business Setup</a></h5>
-									<div class="text">Barnix Finance team is a diverse network of sonsultants and  industry porfessionlas with</div>
+									<div class="text">What is the “size of the prize” for the distributor? We exist – To help you get the right screened Distributor</div>
 								</div>
 							</div>
 							
@@ -490,7 +621,7 @@
 								<div class="inner-box wow fadeInLeft" data-wow-delay="450ms" data-wow-duration="1500ms">
 									<div class="icon flaticon-atom"></div>
 									<h5><a href="service-detail.html">Organizational Development</a></h5>
-									<div class="text">Barnix Finance team is a diverse network of sonsultants and  industry porfessionlas with</div>
+									<div class="text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</div>
 								</div>
 							</div>
 							
@@ -509,7 +640,7 @@
 			<div class="row clearfix">
 			
 				<!-- Form Column -->
-				<div class="form-column col-lg-5 col-md-12 col-sm-12">
+				<div class="form-column col-lg-12 col-md-12 col-sm-12">
 					<div class="inner-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<!-- Title Box -->
 						<div class="title-box">
@@ -556,7 +687,7 @@
 				</div>
 				
 				<!-- Content Column -->
-				<div class="content-column col-lg-7 col-md-12 col-sm-12">
+				<!-- <div class="content-column col-lg-7 col-md-12 col-sm-12">
 					<div class="inner-column">
 						<h2>We turn information into actionable insights</h2>
 						<p>Our clients describe us as a product team which creates amazing UI/UX experiences, by crafting top-notch user experience.Our clients describe us as a product team which creates amazing</p>
@@ -572,13 +703,13 @@
 							<li><a href="#">Our Team <span class="flaticon-next-2"></span></a></li>
 						</ul>
 					</div>
-				</div>
+				</div> -->
 				
 			</div>
 		</div>
 	</section>
-	<!-- End Information Section -->
-	
+
+
 	<!-- Project Section -->
 	<section class="projects-section">
 		<div class="outer-container">
@@ -708,140 +839,25 @@
 		</div>
 	</section>
 	<!-- End Project Section -->
-	
-	<!-- Pricing Section -->
-	<section class="pricing-section">
-		<div class="auto-container">
-			<!-- Sec Title -->
-			<div class="sec-title centered">
-				<h2>Suitable Pricing Plans</h2>
-				<div class="text">No Contacts. No surprise fees.</div>
-			</div>
-			<div class="row clearfix">
+
+
+<!-- Strategy Section -->
+<section class="strategy-section" style="background-color: black;">
+	<div class="auto-container">
+		<div class="row clearfix">
+		
+		<img src="img/goals.png">
 			
-				<!-- Package Column -->
-				<div class="package-column col-lg-6 col-md-12 col-sm-12">
-					<div class="inner-column">
-						
-						<!-- Price Info Tab -->
-						<div class="price-info-tabs">
-							<!-- Price Tab -->
-							<div class="price-tab tabs-box">
-							
-								<!-- Tab Btns -->
-								<ul class="tab-btns tab-buttons clearfix">
-									<li data-tab="#prod-monthly" class="tab-btn active-btn">Monthly</li>
-									<li data-tab="#prod-yearly" class="tab-btn">Yearly</li>
-								</ul>
-								
-								<!-- Tabs Container -->
-								<div class="tabs-content">
-									
-									<!-- Tab / Active Tab -->
-									<div class="tab active-tab" id="prod-monthly">
-										<div class="content">
-											<ul class="price-list">
-												<li>All Financial Tasks</li>
-												<li>Economic Market Survey</li>
-												<li>Sales Operations</li>
-												<li class="hide">Auto Intelligence</li>
-												<li class="hide">24/7 Support</li>
-												<li class="hide">Financila Technology Services</li>
-											</ul>
-										</div>
-									</div>
-									
-									<!-- Tab -->
-									<div class="tab" id="prod-yearly">
-										<div class="content">
-											<ul class="price-list">
-												<li>All Financial Tasks</li>
-												<li>Economic Market Survey</li>
-												<li>Sales Operations</li>
-												<li>Auto Intelligence</li>
-												<li>24/7 Support</li>
-												<li>Financila Technology Services</li>
-											</ul>
-										</div>
-									</div>
-									
-								</div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-				<!-- Pricing Column -->
-				<div class="pricing-column col-lg-6 col-md-12 col-sm-12">
-					<div class="inner-column">
-						
-						<!-- Price Box -->
-						<div class="price-box">
-							<div class="box-inner d-flex justify-content-between align-items-center">
-								<div class="title">
-									<span class="icon fa fa-check"></span>
-									<h4>Private <i>Save 20%</i></h4>
-								</div>
-								<div class="price">$29 <sub>/ Monthly</sub></div>
-							</div>
-						</div>
-						
-						<!-- Price Box -->
-						<div class="price-box">
-							<div class="box-inner d-flex justify-content-between align-items-center">
-								<div class="title">
-									<span class="icon fa fa-check"></span>
-									<h4>Business <i>Save 20%</i></h4>
-								</div>
-								<div class="price">$69 <sub>/ Monthly</sub></div>
-							</div>
-						</div>
-						
-						<!-- Price Box -->
-						<div class="price-box">
-							<div class="box-inner d-flex justify-content-between align-items-center">
-								<div class="title">
-									<span class="icon fa fa-check"></span>
-									<h4>Corporate <i>Save 20%</i></h4>
-								</div>
-								<div class="price">$89 <sub>/ Monthly</sub></div>
-							</div>
-						</div>
-						
-						<!-- Price Box -->
-						<div class="price-box">
-							<div class="box-inner d-flex justify-content-between align-items-center">
-								<div class="title">
-									<span class="icon fa fa-check"></span>
-									<h4>Individual <i>Save 20%</i></h4>
-								</div>
-								<div class="price">$99 <sub>/ Monthly</sub></div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-				
-			</div>
-			<div class="lower-box clearfix">
-				<div class="pull-left">
-					
-				</div>
-				<div class="pull-right">
-					<button class="theme-btn btn-style-two">
-						<span class="btn-wrap">
-							<span class="text-one">Purchase Plan</span>
-							<span class="text-two">Purchase Plan</span>
-						</span>
-					</button>
-				</div>
-			</div>
+			
 		</div>
-	</section>
-	<!-- End Pricing Section -->
+	</div>
+</section>
+<!-- End Strategy Section -->	
+	
+	
 	
 	<!-- Testimonial Section -->
-    <section class="testimonial-section" style="background-image: url(images/background/1.jpg)">
+    <section class="testimonial-section" style="background-image: url(img/img1.jpg)">
 		<div class="auto-container">
 			<!-- Content Boxed -->
 			<div class="content-boxed">
@@ -872,17 +888,7 @@
 							</div>
 						</div>
 						
-						<!-- Testimonial Block -->
-						<div class="testimonial-block">
-							<div class="block-inner">
-								<div class="author-image">
-									<img src="images/resource/author-1.png" alt="" />
-								</div>
-								<div class="text">"I couldn't have asked for more than this. I will refer everyone I know. I like Level more and more each day because it makes my life a lot easier. It really saves me time and effort. Level is exactly what our business has been lacking."</div>
-								<h5>Alextina Ditarson Kim</h5>
-								<div class="designation">CEO booster.com</div>
-							</div>
-						</div>
+				
 						
 					</div>
 					
@@ -896,6 +902,7 @@
     <section class="sponsors-section">
         <div class="auto-container">
 			<div class="inner-container">
+				<center><h2>Link<font color="#F0131D">B</font> Clients</h2></center><br><br>
 				<div class="sponsors-outer">
 					<!-- Sponsors Carousel -->
 					<ul class="sponsors-carousel owl-carousel owl-theme">
@@ -923,107 +930,61 @@
         <div class="auto-container">
 			<div class="row clearfix">
 				<!-- Title Column -->
-				<div class="title-column col-lg-4 col-md-12 col-sm-12">
 					<div class="inner-column">
 						<!-- Sec Title -->
 						<div class="sec-title">
-							<h2>Check our latest news and blogs</h2>
-							<div class="text">
-								Our clients describe us as a product team which creates amazing UI/UX experiences, by crafting top-notch user experience<br><br>
-								Our clients describe us as a product team which creates amazing.
-							</div>
-						</div>
-						<div class="button-box">
-							<a href="blog.html" class="theme-btn btn-style-two">
-								<span class="btn-wrap">
-									<span class="text-one">More Blog</span>
-									<span class="text-two">More Blog</span>
-								</span>
-							</a>
-						</div>
-					</div>
-				</div>
-				<!-- Blocks Column -->
-				<div class="blocks-column col-lg-8 col-md-12 col-sm-12">
-					<div class="inner-column">
+							<h2>Get in Touch</h2><br>
+		
+
+
+				<div class="row clearfix">
 					
-						<!-- News Block -->
-						<div class="news-block">
-							<div class="inner-box d-flex justify-content-between">
-								<!-- Info Box -->
-								<div class="news-info-box">
-									<div class="author-image">
-										<img src="images/resource/author-2.png" alt="" />
-									</div>
-									<div class="author-name">By: <span>Alextian</span></div>
-									<div class="post-time">January 23,2023</div>
-								</div>
-								
-								<!-- Middle Content -->
-								<div class="middle-content">
-									<h4><a href="news-detail.html">10 Simple Practices That Will Help You</a></h4>
-									<div class="text">I’m baby direct trade cliche cloud bread hammock kinfolk deep v. <br> Irony PBR&B schlitz, bespoke jianbing post-ironic  […]</div>
-								</div>
-								
-								<div class="read-more">
-									<a class="more-service" href="news-detail.html">Read More <span class="flaticon-next-2"></span></a>
-								</div>
-								
+					<!-- Info Block -->
+					<div class="info-block col-lg-4 col-md-6 col-sm-12">
+						<div class="inner-box" style="background-color: rgb(241, 241, 241);">
+							<div class="icon-outer">
+								<div class="icon flaticon-telephone"></div>
+							</div>
+							<h5>Phone Number</h5>
+							<div class="text">
+								<a href="tel:+1255-568-6523">+1255 - 568 - 6523</a><br>
+								<a href="tel:+1255-568-6523">+1255 - 568 - 6523</a>
 							</div>
 						</div>
-						
-						<!-- News Block -->
-						<div class="news-block">
-							<div class="inner-box d-flex justify-content-between">
-								<!-- Info Box -->
-								<div class="news-info-box">
-									<div class="author-image">
-										<img src="images/resource/author-3.png" alt="" />
-									</div>
-									<div class="author-name">By: <span>Alextian</span></div>
-									<div class="post-time">January 23,2023</div>
-								</div>
-								
-								<!-- Middle Content -->
-								<div class="middle-content">
-									<h4><a href="news-detail.html">CTA Modal: How To Build A Web <br> Component</a></h4>
-									<div class="text">I’m baby direct trade cliche cloud bread hammock kinfolk deep v. <br> Irony PBR&B schlitz, bespoke jianbing post-ironic  […]</div>
-								</div>
-								
-								<div class="read-more">
-									<a class="more-service" href="news-detail.html">Read More <span class="flaticon-next-2"></span></a>
-								</div>
-								
+					</div>
+					
+					<!-- Info Block -->
+					<div class="info-block col-lg-4 col-md-6 col-sm-12">
+						<div class="inner-box" style="background-color: rgb(241, 241, 241);">
+							<div class="icon-outer">
+								<div class="icon flaticon-map"></div>
 							</div>
+							<h5>address line</h5>
+							<div class="text">Bowery St, New York, NY <br> 10013,USA</div>
 						</div>
-						
-						<!-- News Block -->
-						<div class="news-block">
-							<div class="inner-box d-flex justify-content-between">
-								<!-- Info Box -->
-								<div class="news-info-box">
-									<div class="author-image">
-										<img src="images/resource/author-4.png" alt="" />
-									</div>
-									<div class="author-name">By: <span>Alextian</span></div>
-									<div class="post-time">January 23,2023</div>
-								</div>
-								
-								<!-- Middle Content -->
-								<div class="middle-content">
-									<h4><a href="news-detail.html">Preventing Bad UX Through Integrated <br> Design Workflows</a></h4>
-									<div class="text">I’m baby direct trade cliche cloud bread hammock kinfolk deep v. <br> Irony PBR&B schlitz, bespoke jianbing post-ironic  […]</div>
-								</div>
-								
-								<div class="read-more">
-									<a class="more-service" href="news-detail.html">Read More <span class="flaticon-next-2"></span></a>
-								</div>
-								
+					</div>
+					
+					<!-- Info Block -->
+					<div class="info-block col-lg-4 col-md-6 col-sm-12">
+						<div class="inner-box" style="background-color: rgb(241, 241, 241);">
+							<div class="icon-outer">
+								<div class="icon flaticon-clock"></div>
 							</div>
+							<h5>Opening Hours</h5>
+							<div class="text">Moday - Friday <br> 09:00 AM - 05:00 PM</div>
+						</div>
+					</div>
+					
+				</div>
+		
+				
+			
+						
 						</div>
 						
 					</div>
-				</div>
+				<!-- Blocks Column -->
+			
 			</div>
 		</div>
 	</section>
