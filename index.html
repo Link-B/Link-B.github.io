@@ -258,6 +258,49 @@ a, button {
     font-family: var(--font-family-Roboto);
     background-color: #f0131d;
 }
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column1 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 479px){
+.info-box a {
+    display: inline-block;
+    font-size: var(--font-22);
+	margin-top: 0px;
+}}
+.banner-section-two {
+	background-image: url('img/bg7.jpg');
+    position: relative;
+    padding: 120px 0px 60px;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+@media only screen and (max-width: 479px){
+.banner-section-two {
+	background-image: url('img/bg7.jpg');
+    position: relative;
+    padding: 120px 0px 60px;
+    background-position: center center;
+    background-repeat: no-repeat;
+	background-size: 300px 100px;
+
+}}
 </style>
 
 <body>
@@ -452,7 +495,7 @@ a, button {
 	<!-- END sidebar widget item -->
 
 	<!-- Banner Section Two -->
-    <section class="banner-section-two" id="home" style="background-color: black;">
+    <section class="banner-section-two" id="home" style="background-image: none ;background-color: black;">
 		<div class="auto-container">
             <div class="row clearfix">
 				
@@ -501,7 +544,7 @@ a, button {
 	
 
 <!-- Banner Section Two -->
-<section class="banner-section-two" style="background-image: url('img/bg7.jpg');">
+<section class="banner-section-two">
 	<div class="auto-container">
 		<div class="row clearfix">
 			
@@ -577,7 +620,7 @@ a, button {
 					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<div class="icon flaticon-target-1"></div>
 						<h5><a href="service-detail.html">Marketing Solution</a></h5>
-						<div class="text">advice including entry to the market, sizing the market, gauging the competition, determining price, designing an appropriate route to market, and selecting distributors.</div>
+						<div class="text">Advice including entry to the market, sizing the market, gauging the competition, determining price, designing an appropriate route to market, and selecting distributors.</div>
 					</div>
 				</div>
 				
@@ -619,7 +662,7 @@ a, button {
 						<p>For clients who want to build a market presence in the Middle East, Africa and Asia. LinkB offers market entry advice including but not limited to; research - sizing the market, gauging the competition, determining the price, designing an appropriate route to market and even selecting distributors.</p>
 						<p>For clients that already have a business, we can help enhance the RTM including assessing the quality of the distribution partners. We also manage brands on behalf of the clients. By doing so, we help bring the client’s products close to the target market.
 						</p>
-						<a class="more-service" href="services.html">See Our Solution <span class="flaticon-next-2"></span></a>
+						<a class="more-service" href="#consultation">See Our Solution <span class="flaticon-next-2"></span></a>
 					</div>
 				</div>
 				
@@ -632,7 +675,7 @@ a, button {
 							<div class="service-block-two col-lg-12 col-md-6 col-sm-12">
 								<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 									<div class="icon flaticon-bar-chart"></div>
-									<h5><a href="service-detail.html">1.</a></h5>
+									<h5><a href="service-detail.html"></a></h5>
 									<div class="text">Distributors are overwhelmed by calls from brand owners looking for new partners.</div>
 								</div>
 							</div>
@@ -641,7 +684,7 @@ a, button {
 							<div class="service-block-two col-lg-12 col-md-6 col-sm-12">
 								<div class="inner-box wow fadeInLeft" data-wow-delay="150ms" data-wow-duration="1500ms">
 									<div class="icon flaticon-graduated"></div>
-									<h5><a href="service-detail.html">2.</a></h5>
+									<h5><a href="service-detail.html"></a></h5>
 									<div class="text">Distributors assess each opportunity carefully, as any new brand must add incremental sales and profits and not distract from priorities from existing brands handled.</div>
 								</div>
 							</div>
@@ -650,8 +693,8 @@ a, button {
 							<div class="service-block-two col-lg-12 col-md-6 col-sm-12">
 								<div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
 									<div class="icon flaticon-hand-shake"></div>
-									<h5><a href="service-detail.html">3.</a></h5>
-									<div class="text">What is the “size of the prize” for the distributor? We exist – To help you get the right screened Distributor</div>
+									<h5><a href="service-detail.html"></a></h5>
+									<div class="text">What is the “size of the prize” for the distributor? We exist – To help you get the right screened Distributor.</div>
 								</div>
 							</div>
 							
@@ -676,7 +719,7 @@ a, button {
 					<div class="inner-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<!-- Title Box -->
 						<div class="title-box">
-							<h4>Free Consultation</h4>
+							<h4 id="consultation">Free Consultation</h4>
 						</div>
 						
 						<!-- Default Form -->
@@ -690,7 +733,7 @@ a, button {
 								</div>
 								
 								<div class="form-group">
-									<input type="email" name="email" placeholder="Email Your Email" required>
+									<input type="email" name="email" placeholder="Enter Your Email" required>
 								</div>
 								
 								<div class="form-group">
@@ -745,7 +788,7 @@ a, button {
 	<!-- Project Section -->
 	<section class="projects-section">
 		<div class="outer-container">
-			<div class="services-carousel owl-carousel owl-theme">
+			<div class="sponsors-carousel owl-carousel owl-theme">
 				
 				<!-- Project Block -->
 				<div class="project-block">
@@ -819,7 +862,30 @@ a, button {
 	<div class="auto-container">
 		<div class="row clearfix">
 		
-		<img src="img/goals.png">
+		<div class="row">
+			<div class="column1" style="background-color:#aaaaaa00;">
+			  <h2>OUR MISSION</h2>
+			  <h4 style="font-family:'Segoe UI', Tahoma, sans-serif; color: white; font-weight: 400;">Understanding, meeting and exceeding the business expectations of our suppliers & customers.
+				Implementing a modern sales processes that is aligned to the market developments and is able to leverage trade opportunities.</h4>
+			</div>
+			<div class="column1" style="background-color:#bbbbbb00;">
+				<img src="img/mission.jpg" width="80%">
+			</div>
+		  </div>
+
+		<br>
+
+		
+		<div class="row" style="margin-top: 130px;">
+			<div class="column1" style="background-color:#bbbbbb00;">
+				<img src="img/vission.jpg" width="80%">
+			</div>
+			<div class="column1" style="background-color:#aaaaaa00;">
+			  <h2>OUR VISION</h2>
+			  <h4 style="font-family:'Segoe UI', Tahoma, sans-serif; color: white; font-weight: 400;">Link<font color="red">B</font> group is led and assisted by professionally competent team to help you find the right business partner and take your business to the next level.</h4>
+			</div>
+			
+		  </div>
 			
 			
 		</div>
@@ -830,15 +896,15 @@ a, button {
 	
 	
 	<!-- Testimonial Section -->
-    <section class="testimonial-section" style="background-image: url(img/img1.jpg)">
-		<div class="auto-container">
+    <!-- <section class="testimonial-section" style="background-image: url(img/img1.jpg)">
+		<div class="auto-container"> -->
 			<!-- Content Boxed -->
-			<div class="content-boxed">
+			<!-- <div class="content-boxed">
 				<div class="inner-box" style="background-image: url(images/main-slider/pattern-1.png)">
-					<div class="single-item-carousel owl-carousel owl-theme">
+					<div class="single-item-carousel owl-carousel owl-theme"> -->
 						
 						<!-- Testimonial Block -->
-						<div class="testimonial-block">
+						<!-- <div class="testimonial-block">
 							<div class="block-inner">
 								<div class="author-image">
 									<img src="images/resource/author-1.png" alt="" />
@@ -846,10 +912,10 @@ a, button {
 								<div class="text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis."</div>
 								<h5>Alexander Kim</h5>
 							</div>
-						</div>
+						</div> -->
 						
 						<!-- Testimonial Block -->
-						<div class="testimonial-block">
+						<!-- <div class="testimonial-block">
 							<div class="block-inner">
 								<div class="author-image">
 									<img src="images/resource/author-1.png" alt="" />
@@ -866,7 +932,7 @@ a, button {
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- End Testimonial Section -->
 	
 	<!-- Sponsors Section -->
@@ -991,9 +1057,9 @@ a, button {
                                 <div class="footer-widget links-widget">
 									<h6>Our Location</h6>
 									<ul class="page-list">
-										<li><a href="#">Saudi Arebia</a></li>
+										<li><a href="#">Saudi Arabia</a></li>
 										<li><a href="#">Egypt</a></li>
-										<li><a href="#">Uae</a></li>
+										<li><a href="#">UAE</a></li>
 										<li><a href="#">Oman</a></li>
 										<li><a href="#">North Africa</a></li>
 									</ul>
