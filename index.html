@@ -301,23 +301,91 @@ a, button {
     background-repeat: no-repeat;
 
 }}
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:30px;
-	right:80px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	/* box-shadow: 2px 2px 3px #999; */
-  z-index:100;
+@media only screen and (max-width: 479px){
+	.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 300px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    /* box-shadow: 2px 2px 3px #999; */
+    z-index: 100;
+}}
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 1249px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    /* box-shadow: 2px 2px 3px #999; */
+    z-index: 100;
 }
 
 .my-float{
 	margin-top:16px;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  background: white;
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 1147px;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
 }
 </style>
 
@@ -961,18 +1029,56 @@ a, button {
 	<!-- Sponsors Section -->
     <section class="sponsors-section">
         <div class="auto-container">
+		
 			<div class="inner-container">
 				<center><h2>Link<font color="#F0131D">B</font> Clients</h2></center><br><br>
-				<div class="sponsors-outer">
-					<!-- Sponsors Carousel -->
-					<ul class="sponsors-carousel owl-carousel owl-theme">
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="img/areen.png" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="img/3.png" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="img/4.png" alt=""></a></figure></li>
+				<div class="slider">
+					<div class="slide-track">
+						<div class="slide">
+							<img src="img/areen.png" height="100" width="250" alt="" />
+						</div>
+						<div class="slide">
+							<img src="img/3.png" height="100" width="250" alt="" />
+						</div>
+						<div class="slide">
+							<img src="img/4.png" height="100" width="250" alt="" />
+						</div>
 					
 					
+						
+						
+						<div class="slide">
+							<img src="img/areen.png" height="100" width="250" alt="" />
+						</div>
 					
-					</ul>
+						<div class="slide">
+							<img src="img/4.png" height="100" width="250" alt="" />
+						</div>
+						<div class="slide">
+							<img src="img/3.png" height="100" width="250" alt="" />
+						</div>
+					
+						<div class="slide">
+							<img src="img/areen.png" height="100" width="250" alt="" />
+						</div>
+						<div class="slide">
+							<img src="img/3.png" height="100" width="250" alt="" />
+						</div>
+						<div class="slide">
+							<img src="img/4.png" height="100" width="250" alt="" />
+						</div>
+						<div class="slide">
+							<img src="img/areen.png" height="100" width="250" alt="" />
+						</div>
+						<div class="slide">
+							<img src="img/3.png" height="100" width="250" alt="" />
+						</div>
+						<div class="slide">
+							<img src="img/4.png" height="100" width="250" alt="" />
+						</div>
+						
+						
+					</div>
 				</div>
             </div>
         </div>
