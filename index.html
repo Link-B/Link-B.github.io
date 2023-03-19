@@ -303,20 +303,61 @@ a, button {
 
 }}
 @media only screen and (max-width: 479px){
+.column1 {
+    float: left;
+    width: 100%;
+    padding: -3px;
+    height: 248px;
+}}
+
+@media only screen and (max-width: 479px){
+	.c1{
+		margin-top: 3px;
+	}
+
+}
+
+
+.whatsapp-float {
+			position: fixed;
+			bottom: 20px;
+			width: 60px;
+    height: 60px;
+			left: 20px;
+			z-index: 99;
+			background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+		}
+		@media (max-width: 768px) {
+			.whatsapp-float {
+			    bottom: 31px;
+    left: 25px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 30px;
+			}
+		}
+
+@media only screen and (max-width: 479px){
 	.float {
     position: fixed;
     width: 60px;
     height: 60px;
     bottom: 30px;
     right: 300p;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
+  
     /* box-shadow: 2px 2px 3px #999; */
     z-index: 100;
 }}
+
+
 .float {
     position: fixed;
     width: 60px;
@@ -388,12 +429,27 @@ a, button {
   height: 100px;
   width: 250px;
 }
+.box1 {
+        width: 50%;
+        padding: 20px;
+      }
+      .text1 {
+        font-size: 24px;
+        line-height: 1.5;
+      }
+     
+      @media (max-width: 768px) {
+        .box1 {
+          width: 100%;
+        }
+      }
 </style>
 
 <body>
-	<a href="https://wa.link/npwovp" class="float" target="_blank">
+	<a href="https://wa.link/npwovp" target="_blank" class="whatsapp-float">
 		<i class="fa fa-whatsapp my-float"></i>
-		</a>
+	</a>
+
 <!-- <div class="cursor"></div> -->
 <div class="page-wrapper">
  	
@@ -814,26 +870,26 @@ a, button {
 						<div class="default-form">
 							
 							<!-- Default Form -->
-							<form method="post" action="blog.html">
+							<form id="submit-form" action="">
 								
 								<div class="form-group">
-									<input type="text" name="username" placeholder="Full Name" required>
+									<input type="text" name="Full Name" placeholder="Full Name" required>
 								</div>
 								
 								<div class="form-group">
-									<input type="email" name="email" placeholder="Enter Your Email" required>
+									<input type="email" name="Email" placeholder="Enter Your Email" required>
 								</div>
 								
 								<div class="form-group">
-									<input type="text" name="phone" placeholder="Enter Phone Number" required>
+									<input type="text" name="Phone Number" placeholder="Enter Phone Number" required>
 								</div>
 								
 								<div class="form-group">
-									<textarea class="" name="message" placeholder="Enter your massage"></textarea>
+									<textarea class="" name="Message" placeholder="Enter Your Message"></textarea>
 								</div>
 								
 								<div class="form-group">
-									<button class="theme-btn btn-style-two">
+									<button type="submit" value="Submit" class="theme-btn btn-style-two">
 										<span class="btn-wrap">
 											<span class="text-one">Send request</span>
 											<span class="text-two">Send request</span>
@@ -949,31 +1005,27 @@ a, button {
 <section class="strategy-section" id="goals" style="background-color: black;">
 	<div class="auto-container">
 		<div class="row clearfix">
-		
-		<div class="row">
-			<div class="column1" style="background-color:#aaaaaa00;">
-			  <h2>OUR MISSION</h2>
-			  <h4 style="font-family:'Segoe UI', Tahoma, sans-serif; color: white; font-weight: 400;">Understanding, meeting and exceeding the business expectations of our suppliers & customers.
-				Implementing a modern sales processes that is aligned to the market developments and is able to leverage trade opportunities.</h4>
-			</div>
-			<div class="column1" style="background-color:#bbbbbb00;">
-				<img src="img/mission.jpg" width="80%">
-			</div>
-		  </div>
 
-		<br>
+
+				<div class="box1">
+					<h2>OUR MISSION</h2>
+				  <p class="text1">Understanding, meeting and exceeding the business expectations of our suppliers & customers.
+					Implementing a modern sales processes that is aligned to the market developments and is able to leverage trade opportunities.</p><br>
+				  <img src="img/mission.jpg" width="80%" alt="Placeholder Image">
+				</div>
+				<div class="box1">
+				  <img src="img/vission.jpg" width="80%" alt="Placeholder Image"><br>
+				  <h2 style="margin-top: 60px;">OUR VISION</h2>
+				  <p class="text1">Link<font color="red">B</font> group is led and assisted by professionally competent team to help you find the right business partner and take your business to the next level.</p>
+				</div>
+
+
+
 
 		
-		<div class="row" style="margin-top: 130px;">
-			<div class="column1" style="background-color:#bbbbbb00;">
-				<img src="img/vission.jpg" width="80%">
-			</div>
-			<div class="column1" style="background-color:#aaaaaa00;">
-			  <h2>OUR VISION</h2>
-			  <h4 style="font-family:'Segoe UI', Tahoma, sans-serif; color: white; font-weight: 400;">Link<font color="red">B</font> group is led and assisted by professionally competent team to help you find the right business partner and take your business to the next level.</h4>
-			</div>
-			
-		  </div>
+		
+
+		
 			
 			
 		</div>
@@ -1311,6 +1363,25 @@ a, button {
 <script src="js/jquery-ui.js"></script>
 <script src="js/script.js"></script>
 <script src="js/color-settings.js"></script>
+<script>
+	$("#submit-form").submit((e)=>{
+		e.preventDefault()
+		$.ajax({
+			url:"https://script.google.com/macros/s/AKfycbzBgqK41JN7CF4J30wHk4vezghiZn428ySf1lhnHtTyl8oHbe-R6nqwubP1K-EJUYMG9Q/exec",
+			data:$("#submit-form").serialize(),
+			method:"post",
+			success:function (response){
+				alert("Form submitted successfully")
+				window.location.reload()
+				//window.location.href="https://google.com"
+			},
+			error:function (err){
+				alert("Something Error")
+
+			}
+		})
+	})
+</script>
 
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
